@@ -1,0 +1,143 @@
+
+  /* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow-x: hidden
+}
+
+/* Game Container */
+#box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+
+/* Heading Style */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+#text {
+  text-align: center;
+  color: #333;
+}
+/* Form Styling */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#user-input {
+  padding: 10px;
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#btn {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 16px;
+}
+#btnBox{
+    display: flex;
+    justify-content: center;
+}
+
+#btn:hover {
+  background-color: #218838;
+}
+
+/* Results Section */
+#box #para {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+#message {
+  font-weight: bold;
+  font-size: 18px;
+  color: #dc3545;
+}
+
+#message.correct {
+  color: #28a745;
+}
+
+#attempt {
+  font-weight: bold;
+  color: #007bff;
+}
+
+#prevGuess {
+  color: #6c757d;
+  display: inline-block;
+  flex-wrap: wrap;
+}
+
+/* New Game Button */
+#newBtn {
+  background-color:  #28a745;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  font-size: 16px;
+}
+
+#newBtn:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+
+  #user-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #btn {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  #box {
+    padding: 15px;
+    width: 100%;
+  }
+#prevGuess{
+  max-width: 100%;
+}
+  h1 {
+    font-size: 20px;
+  }
+}

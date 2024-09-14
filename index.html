@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  
+  
+  
+</head>
+
+<body>
+  <div>
+<h1>Guess A Number</h1>
+<p id="text">Try and Guess a Random Number Between 1 and 100!</p>
+<p id="text">You Have 10 attempts To Guess The Right Number.</p>
+  <form id="form">
+  <input type="text" name="" id="user-input">
+  <button type="submit" id="btn">Guess</button>
+</form>
+
+
+
+<div id="box">
+  <p id="para">Previous Guesses: <span id="prevGuess"></span></p>
+  <p id="para">Guesses Remaining: <span id="attempt">10</span></p>
+  <p id="message"></p>
+</div>
+
+<div id="btnBox">
+<button onclick="newGame()" id="newBtn">New Game Start</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
